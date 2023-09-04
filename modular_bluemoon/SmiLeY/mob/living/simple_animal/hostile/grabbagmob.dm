@@ -746,10 +746,12 @@
 	faction = list(ROLE_SYNDICATE)
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
+	initial_language_holder = /datum/language_holder/synthetic
 
 /mob/living/simple_animal/hostile/syndimouse/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
+	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
 
 /mob/living/simple_animal/hostile/mannequin
 	name = "living mannequin"
